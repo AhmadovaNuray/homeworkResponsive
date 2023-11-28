@@ -20,16 +20,17 @@ html{
   width: calc(100%-32px);
   height: 100px;
   background-color: white;
-  margin:16px 16px;
-  align-items: center;
+  /* margin:16px 16px; */
+  text-align: center;
+  margin: auto;
   
   }
   
   .profile{
       margin-top: 40px;
-      display: flex;
+      /* display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: center; */
       padding: 18px 40px;
       border-radius: 6px;
       border: 1px solid #D1D5DB;
@@ -93,53 +94,21 @@ html{
 
   .card-container{
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: 
 
-   
+
+
   }
-  .card-container .card1{
+     
+  
+
+  .card-container .card{
     border: 1px solid #D1D5DB;
     background: #F9FAFB;
-    width: 465px;
-    height: 100px;
+    width: 100%;
   }
 
-  .card1 h3{
-    color: #4B5563;
-    font-size: 1;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 42px;
-  }
-  .card-container .card2{
-    border: 1px solid #D1D5DB;
-    background: #F9FAFB;
-    width: 426px;
-    height: 100px;
-  }
-
-  .card2 h3{
-    color: #4B5563;
-    font-size: 1;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 42px;
-  }
-
-  .card-container .card3{
-    border: 1px solid #D1D5DB;
-    background: #F9FAFB;
-    width: 388px;
-    height: 100px;
-  }
-
-  .card3 h3{
-    color: #4B5563;
-    font-size: 1;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 42px;
-  }
+  
 
 
 
