@@ -1,0 +1,129 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+font-family: 'inter',sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+}
+
+.container{
+width: 1280px;
+height: 100px;
+margin: 0 auto;
+background-color: white;
+
+}
+
+.profile{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    padding: 18px 40px;
+    border-radius: 6px;
+}
+
+.profile-picture{
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.profile-picture img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.profile-left{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.profile h3{
+    font-size: 24px;
+    font-weight: 600;
+    color:#111827;
+}
+
+.profile p{
+    font-size: 14px;
+    font-weight: 500;
+    color:#000;
+}
+
+.profile-right{
+    display: flex;
+    gap: 16px;
+}
+
+.btn-light{
+    padding: 0.5rem 1rem;
+    border: 1px solid #4F46E5;
+    background: none;
+    border-radius: 6px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn-purple{
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    border: 1px solid  #4F46E5;;
+    background-color: #4F46E5;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 834px){
+    .container{
+        width: calc(100% - 32px);
+        margin: 0 auto;
+    }
+    .profile{
+        margin-top: 16px;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    
+    .profile-right{
+        margin-top: 18px;
+    }
+   .btn-purple{
+    order: -1;
+   }
+}
+
+@media  screen and (max-width: 428px){
+    .profile{
+        padding: 18px 16px;
+    }
+    .profile-right{
+        flex-direction: column;
+        width: 100%;
+        margin-top:  17px;
+    }
+
+    .profile-picture{
+        flex-shrink: 0;
+
+    }
+    .btn{
+        width: 100%;
+    }
+    
+}
